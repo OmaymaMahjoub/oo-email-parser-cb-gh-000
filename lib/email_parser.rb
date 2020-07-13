@@ -14,9 +14,7 @@ class EmailAddressParser
       m.split(",")
       if m.is_a?(Array)
         m.each do |singlem|
-          if singlem.end_with?(",")
-            singlem=singlem.delete_suffix(",")
-          end
+          singlem=singlem.delete_suffix(",")
           arr2<<singlem
         end
       else
