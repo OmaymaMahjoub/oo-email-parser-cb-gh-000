@@ -18,9 +18,7 @@ class EmailAddressParser
           arr2<<singlem
         end
       else
-        if m.end_with?(",")
-          m=m.delete_suffix(",")
-        end
+        m=m.delete_suffix(",")
         arr2<<m
       end
     end
